@@ -1,0 +1,41 @@
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.retangulo{
+    position: absolute;
+    width: 1520px;
+    height: 730px;
+    border-radius: 2%;
+    filter: drop-shadow(10px 10px 25px #707070);
+    background-color: rgb(255, 255, 255);
+}
+
+#ana{
+    position: absolute;
+    left: 3%;
+    bottom: 67%;
+    font-size: 100px;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #a3a3a3;
+}
+
+.X {
+    width: 100px;
+    position: absolute;
+    left: 92.5%;
+    top:1%;
+    cursor: pointer;
+}
+
+.anaimg {
+    position: absolute;
+    width: 400px;
+    clip-path: circle();
+    left: 60%;
+    top:25%;
+}

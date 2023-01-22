@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>11º Encontro CDM</title>
+    <link rel="icon" href="logo_11_cdm.png" type="image/icon type">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#container"><img class="logo" src="logo_11_cdm.png"></a>
+        <a href="#countdown">
+            <p id="txtnavbar">APRESENTAÇÃO</p>
+        </a>
+        <a href="#img_linha2">
+            <p id="txtnavbar2">PROGRAMA</p>
+        </a>
+        <a href="#ora">
+            <p id="txtnavbar3">ORADORES</p>
+        </a>
+        <a href="#img_linha_ora">
+            <p id="txtnavbar4">GALERIA</p>
+        </a>
+        <a href="#con">
+            <p id="txtnavbar5">CONTACTOS</p>
+        </a>
+    </div>
+    <a href="#container"><img class="seta" src="seta1.png"></a>
+
+    <div id="container">
+        <p id="dias">Dias</p>
+        <p id="horas">Horas</p>
+        <p id="min">Minutos</p>
+        <p id="sec">Segundos</p>
+        <div class="imagem">
+            <img class="img1" src="esec3.jpg">
+        </div>
+        <div class="texto">COUNTDOWN</div>-
+        <p id="countdown"></p>
+
+        <img class="img_linha" src="linha3.png">
+        <div class="evento">
+            <p> O evento vai-se realizar dia 9 de maio de 2023</p>
+
+
+
+            <script>
+                var countDownDate = new Date("May 9, 2023 09:30:00").getTime();
+
+                var x = setInterval(function () {
+
+                    var now = new Date().getTime();
+
+                    var distance = countDownDate - now;
+
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.getElementById("countdown").innerHTML = days + " : " + hours + " : "
+                        + minutes + " : " + seconds + " ";
+
+
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("countdown").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
+        </div>
+    </div>
+
+
+    <div class="container2">
+        <div class="imgg">
+            <img class="img2" src="logo_11_cdm.png" style="padding-top:99px;">
+        </div>
+        <div class="caixatexto">
+            <img class="img3" src="icon.png">
+            <h1>O que é?</h1>
+            <p id="rcorners1">É um evento anual, organizado pelos alunos da licenciatura de Comunicação e Design
+                Multimédia, da Escola Superior de Educação de Coimbra, na vertente das várias unidades curriculares
+                do
+                curso.</p>
+        </div>
+        <img id="img_linha2" src="linha3.png">
+    </div>
+    <div class="container3">
+        <div class="texto2">
+            <a href="programa (4).pdf" download> <img class="down_orange" src="down_orange.png"> </a>
+            <h2> PROGRAMA </h2>
+            <p id="primeiro">1º Dia Comunicação - 9 de Maio</p>
+
+        </div>
+        <div class="abertura">
+            <img class="traço" src="traço.png">
+            <div class="over">
+                <img class="imgg_esec" src="ESEC.jpg">
+                <a href="programa (4).pdf" download>
+                    <div class="overlay">
+                        <div class="txtover">Download Do Programa</div>
+                        <img class="Download" src="download_.png">
+                    </div>
+                </a>
+            </div>
+            <ul class="lista">
+                <li id="maio">10 de Maio - 9h30</li>
+                <li id="abertura">Abertura do 11º
+                    Encontro de CDM</li>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha4" src="linha3.png">
+        </div>
+    </div>
+    <div class="container4">
+        <div class="primeirap">
+            <img class="traço2" src="traço.png">
+            <img class="img_daniel" src="homem2.jpg">
+            <ul class="lista2">
+                <li id="maio">9 de Maio - 10h00</li>
+                <li id="abertura">2º Palestrante</li>
+                <a href="orador1.html">
+                    <li id="abertura2">Daniel Raposo</li>
+                </a>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha5" src="linha3.png">
+        </div>
+    </div>
+    <div class="container5">
+        <div class="palestra2">
+            <img class="traço3" src="traço.png">
+            <img class="img2plaestra" src="ESEC.jpg">
+            <ul class="lista3">
+                <li id="maio">9 de Maio - 11h00</li>
+                <li id="abertura">2º Palestrante</li>
+                <a href="rui.html">
+                    <li id="abertura2">Rui Mascarcinhas</li>
+                </a>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha6" src="linha3.png">
+        </div>
+    </div>
+    <div clas="container6">
+        <div class="palestra3">
+            <img class="traço4" src="traço.png">
+            <img class="img_daniel" src="homem2.jpg">
+            <ul class="lista4">
+                <li id="maio">9 de Maio - 12h00</li>
+                <li id="abertura">3º Palestrante</li>
+                <a href="bruno.html">
+                    <li id="abertura2">Bruno Sousa</li>
+                </a>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha7" src="linha3.png">
+        </div>
+    </div>
+    <div class="container7">
+        <div class="palestra4">
+            <img class="traço5" src="traço.png">
+            <img class="img3palestra" src="mulher.jpg">
+            <ul class="lista5">
+                <li id="maio">9 de Maio - 14h30 ás 16h30</li>
+                <li id="abertura">Photoshop</li>
+                <a href="bruna.html">
+                    <li id="abertura5">Bruna Sousa</li>
+                </a>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha6" src="linha3.png">
+
+        </div>
+
+    </div>
+    <div clas="container8">
+        <p id="segundo">2º Dia Design 10 de Maio</p>
+        <div class="palestra_">
+            <img class="traço6" src="traço.png">
+            <img class="img_mrdeo" src="ESEC.jpg">
+            <ul class="lista6">
+                <li id="maio">10 de Maio - 9h30</li>
+                <li id="abertura">Palestra 1</li>
+                <a href="deo.html">
+                    <li id="abertura3">MrDeo</li>
+                </a>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha7" src="linha3.png">
+        </div>
+    </div>
+    <div class="container9">
+        <div class="palestra5">
+            <img class="traço5" src="traço.png">
+            <img class="img3palestra" src="mulher.jpg">
+            <ul class="lista7">
+                <li id="maio">10 de Maio - 10h30</li>
+                <li id="abertura">Palestra 2</li>
+                <a href="ana.html">
+                    <li id="abertura2">Ana Fraunhofer</li>
+                </a>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha6" src="linha3.png">
+        </div>
+    </div>
+    <div class="container10">
+        <div class="palestra6">
+            <img class="traço7" src="traço.png">
+            <img class="img_mrdeo" src="ESEC.jpg">
+            <ul class="lista8">
+                <li id="maio">10 de Maio - 12h00</li>
+                <li id="abertura">Palestra 3</li>
+                <a href="artur.html">
+                    <li id="abertura2">Artur Rebelo</li>
+                </a>
+                <a href="lisa.html">
+                    <li id="abertura4">Lisa R2</li>
+                </a>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha9" src="linha3.png">
+        </div>
+    </div>
+    <div class="container11">
+        <div class="palestra7">
+            <img class="traço5" src="traço.png">
+            <img class="img3palestra" src="carrilho.jpeg">
+            <ul class="lista7">
+                <li id="maio">10 de Maio - 14h30 às 16h30</li>
+                <li id="abertura">Ilustração</li>
+                <a href="carrilho.html">
+                    <li id="abertura2">André Carrilho</li>
+                </a>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha6" src="linha3.png">
+
+        </div>
+    </div>
+    <div class="container12">
+        <p id="terceiro">3º Dia - Multimédia - 11 de Maio</p>
+        <div class="palestra8">
+            <img class="traço8" src="traço.png">
+            <img class="img_mrdeo" src="ESEC.jpg">
+            <ul class="lista9">
+                <li id="maio">11 de Maio - 9h30</li>
+                <li id="abertura">Palestra 1</li>
+                <a href="sonia.html">
+                    <li id="abertura2">Sonia Matos</li>
+                </a>
+                <li id="diretora">(Diretora Criativa)</li>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha9" src="linha3.png">
+        </div>
+    </div>
+    <div class="container13">
+        <div class="palestra8">
+            <img class="traço9" src="traço.png">
+            <img class="img3palestra" src="mulher.jpg">
+            <ul class="lista7">
+                <li id="maio">11 de Maio - 10h30</li>
+                <li id="abertura">Palestra 2</li>
+                <a href="edgar.html">
+                    <li id="abertura2">Edgar Ferreira</li>
+                </a>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha6" src="linha3.png">
+        </div>
+    </div>
+    <div class="container14">
+        <div class="palestra9">
+            <img class="traço10" src="traço.png">
+            <img class="img_mrdeo" src="ESEC.jpg">
+            <ul class="lista10">
+                <li id="maio">11 de Maio - 12h00 às 13h00</li>
+                <li id="abertura">Ex Alunos</li>
+                <li id="abertura">Lançamento 2ª Edição</li>
+                <li id="ESEC">(Auditório ESEC)</li>
+            </ul>
+            <img class="img_linha9" src="linha3.png">
+        </div>
+    </div>
+    <div class="container15">
+        <div class="inscrição">
+            <a href="insc.html" target="_blank">
+                <div class="botão">
+                    <p id="botão">INSCREVE-TE</p>
+                </div>
+            </a>
+            <img class="img_linha6" src="linha3.png">
+        </div>
+    </div>
+    <div class="container16">
+        <div class="oradores">
+            <p id="ora"> ORADORES </p>
+
+            <div class="circle"></div>
+            <div class="circulo">+</div>
+            <a class="maisclass" href="orador1.html">
+                <div class="mais">+</div>
+            </a>
+            <img class="orador1" src="danielraposo.png">
+            <p id="nome1">Daniel Raposo</p>
+
+            <div class="circle2"></div>
+            <div class="circulo2"></div>
+            <a class="maisclass" href="rui.html">
+                <div class="mais2">+</div>
+            </a>
+            <img class="orador2" src="homem2.jpg">
+            <p id="nome2">Rui Mascarcinhas</p>
+
+            <div class="circle3"></div>
+            <div class="circulo3"></div>
+            <a class="maisclass" href="bruno.html">
+                <div class="mais3">+</div>
+            </a>
+            <img class="orador3" src="homem2.jpg">
+            <p id="nome3">Bruno Sousa</p>
+
+            <div class="circle4"></div>
+            <div class="circulo4"></div>
+            <a class="maisclass" href="bruna.html">
+                <div class="mais4">+</div>
+            </a>
+            <img class="orador4" src="mulher.jpg">
+            <p id="nome4">Bruna Sousa</p>
+
+            <div class="circle5"></div>
+            <div class="circulo5"></div>
+            <a class="maisclass" href="deo.html">
+                <div class="mais5">+</div>
+            </a>
+            <img class="orador5" src="mulher.jpg">
+            <p id="nome5">MrDeo</p>
+
+            <div class="circle6"></div>
+            <div class="circulo6"></div>
+            <a class="maisclass" href="ana.html">
+                <div class="mais6">+</div>
+            </a>
+            <img class="orador6" src="ana.jpg">
+            <p id="nome6">Ana Fraunhofer</p>
+
+        </div>
+    </div>
+    <div class="container17">
+        <div class="oradores2">
+
+            <div class="circle7"></div>
+            <div class="circulo7"></div>
+            <a class="maisclass" href="artur.html">
+                <div class="mais7">+</div>
+            </a>
+            <img class="orador7" src="homem2.jpg">
+            <p id="nome7">Artur Rebelo</p>
+
+            <div class="circle8"></div>
+            <div class="circulo8"></div>
+            <a class="maisclass" href="lisa.html">
+                <div class="mais8">+</div>
+            </a>
+            <img class="orador8" src="mulher.jpg">
+            <p id="nome8">LisaR2</p>
+
+            <div class="circle9"></div>
+            <div class="circulo9"></div>
+            <a class="maisclass" href="carrilho.html">
+                <div class="mais9">+</div>
+            </a>
+            <img class="orador9" src="carrilho.jpeg">
+            <p id="nome9">André Carrilho</p>
+
+            <div class="circle10"></div>
+            <div class="circulo10"></div>
+            <a class="maisclass" href="edgar.html">
+                <div class="mais10">+</div>
+            </a>
+            <img class="orador10" src="edgar.jpeg">
+            <p id="nome10">Edgar Ferreira</p>
+
+            <div class="circle11"></div>
+            <div class="circulo11"></div>
+            <a class="maisclass" href="sonia.html">
+                <div class="mais11">+</div>
+            </a>
+            <img class="orador11" src="sonia.jfif">
+            <p id="nome11">Sonia Matos</p>
+
+            <img id="img_linha_ora" src="linha3.png">
+        </div>
+    </div>
+
+    <div class="container18">
+        <div class="galeria">
+            <div class="texto2">
+                <h2> GALERIA </h2>
+
+            </div>
+            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/f-xL0xeSEqM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen id="video"></iframe>
+            </iframe>
+            <img class="esecgal" src="ESEC.jpg">
+            <img class="esecgal2" src="10encontro.jpg">
+            <img class="esecgal3" src="evento2.jpg">
+            <div class="circulogal"></div>
+            <div class="circulogal2"></div>
+            <div class="circulogal3"></div>
+            <div class="circulogal4"></div>
+            <div class="circulogal5"></div>
+            <div class="triangulo_cima"></div>
+            <div class="triangulo_direita"></div>
+            <div class="triangulo_baixo"></div>
+            <div class="triangulo_cima2"></div>
+            <div class="triangulo_direita3"></div>
+            <div class="triangulo_direita2"></div>
+            <div class="triangulo_direita4"></div>
+            <a href="https://eventos.esec.pt/10ecdm/#page-top" target="_blank">
+                <div class="botão10encontro">
+                    <p id="botão10encontro">Site do 10º Encontro</p>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/media/set/?set=a.5502995583086105&type=3" target="_blank">
+                <div class="botãomaisfotos">
+                    <p id="botãomaisfotos">Ver Mais Fotos</p>
+                </div>
+            </a>
+
+
+
+        </div>
+        <img class="img_linha6" src="linha3.png">
+    </div>
+
+    <div class="container19">
+        <div class="texto2">
+            <h2 id="con"> CONTACTOS </h2>
+        </div>
+        <div class="contactos">
+            <p id="Esec">ESEC - Escola Superior de</p>
+            <p id="Esec1">Educação de Coimbra</p>
+            <ul class="conta">
+                <li id="End1">Endereço</li>
+                <li id="End2">R. Dom João III </li>
+                <li id="End2">3030-329 Coimbra </li>
+            </ul>
+
+            <ul class="conta2">
+                <li id="tel">Tel.: 239 793 120</li>
+                <li id="tel">Fax: 239 401 461</li>
+            </ul>
+
+            <ul class="conta3">
+                <li id="mail1">Mail do Encontro</li>
+                <li id="mail2">encontrocdm@esec.pt</li>
+            </ul>
+            <iframe id="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.1702190405713!2d-8.408102884775111!3d40.20527637939027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22fa73dea0e5b5%3A0x9152e8f9ebca043f!2sEscola%20Superior%20de%20Educa%C3%A7%C3%A3o%20de%20Coimbra%20(ESEC)!5e0!3m2!1spt-PT!2spt!4v1674258437437!5m2!1spt-PT!2spt"
+                width="3800px" height="1000px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <a href="https://www.instagram.com/ese.coimbra/" target="_blank"> <img id="insta" src="insta__.png"></a>
+            <a href="https://www.facebook.com/esec.coimbra/" target="_blank"><img id="fb" src="facebook__.png"></a>
+            <a href="https://www.youtube.com/c/esectv" target="_blank"><img id="yt" src="youtube__.png"></a>
+        </div>
+
+
+</body>
+
+
+</html> 
